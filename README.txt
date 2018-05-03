@@ -22,3 +22,5 @@ keith2000@gmail.com
 [2011-12-02]: Created DisplayCamerasTwo.m that now works with coplanar cameras. (Thanks to Boram Kim for pointing out the problem.)
 
 [2014-12-08]: Added Win64 mex file and minor change to CompileVisualHullTriMeshMex.m
+
+[2018-05-03]: works on R2018a
