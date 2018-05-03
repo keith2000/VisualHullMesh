@@ -7,6 +7,6 @@ function pVec = ConvexPolyhedronFacesToDualPoints( pPolyhedron )
         A = [A; ones(1, size(A,2) )]' ;
         [~,~,V] = svd(A);
         theJoin = V(:,end); %right nullspace is the plane/point in homogeneous coords
-        pVec(:,faceLoop) = theJoin(1:3)/theJoin(4); %convert to inhomogeneous coords
+        pVec(:,faceLoop) = theJoin(1:end-1)/theJoin(end); %convert to inhomogeneous coords
     end
 end
